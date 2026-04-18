@@ -22,6 +22,35 @@ header {
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+  position: relative;
+}
+
+.user-menu-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #ffffff;
+  color: #1a237e;
+  border: 1px solid #d0d4f5;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.user-menu-btn:hover {
+  background-color: #eef1ff;
+}
+
+.auth-status {
+  position: absolute;
+  top: 18px;
+  right: 62px;
+  font-size: 14px;
+  opacity: 0.95;
 }
 
 header h1 {
@@ -190,6 +219,41 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  width: min(420px, 100%);
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.secondary-btn {
+  background-color: #eceffb;
+  color: #1a237e;
+}
+
+.secondary-btn:hover {
+  background-color: #dbe2fb;
 }
 
 footer {

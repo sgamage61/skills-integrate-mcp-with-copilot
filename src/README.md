@@ -5,7 +5,9 @@ A super simple FastAPI application that allows students to view and sign up for 
 ## Features
 
 - View all available extracurricular activities
-- Sign up for activities
+- Sign up for activities (teacher login required)
+- Unregister students from activities (teacher login required)
+- Teacher authentication using a local JSON credentials file
 
 ## Getting Started
 
@@ -24,6 +26,17 @@ A super simple FastAPI application that allows students to view and sign up for 
 3. Open your browser and go to:
    - API documentation: http://localhost:8000/docs
    - Alternative documentation: http://localhost:8000/redoc
+
+## Teacher Login
+
+Teacher credentials are stored in `teachers.json` and validated by the backend.
+
+Example credentials:
+
+- `teacher.alex` / `Mergington123!`
+- `teacher.jamie` / `Clubs2026!`
+
+Students can view activities and participants without login, but only logged-in teachers can register or unregister students.
 
 ## API Endpoints
 
